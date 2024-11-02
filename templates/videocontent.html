@@ -1,0 +1,79 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/x-icon" href="{% static 'img/favicon.ico' %}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videos - Placement Prep</title>
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.css" rel="stylesheet" />
+
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="justify-content-center">
+
+    <!-- Including Navbar -->
+    {% include "nav.html" %}
+
+    <!-- Main Dashboard -->
+    <div class="container" style="margin-top: 90px;">
+
+      <div class="w-100 p-2 text-center pb-2">
+
+        <hr><h5>Programming Languages</h5><hr>
+        <div class="row">
+            <div class="col-md-4"><iframe src="https://www.youtube.com/embed/grEKMHGYyns" title="YouTube video player" frameborder="2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><span><br>Java</span></div>
+            <div class="col-md-4"><iframe src="https://www.youtube.com/embed/_uQrJ0TkZlc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><span><br>Python</span></div>
+            <div class="col-md-4"><iframe src="https://www.youtube.com/embed/8jLOx1hD3_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><span><br>C++</span></div>
+        </div>
+        <hr><h5>Data Structures & Algorithms</h5><hr>
+        <div class="row">
+            <div class="col-md-4"><iframe src="https://www.youtube.com/embed/videoseries?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><span><br>DSA in Java</span></div>
+            <div class="col-md-4"><iframe src="https://www.youtube.com/embed/_b4-6HhjVl0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><span><br>DSA in Python</span></div>
+            <div class="col-md-4"><iframe src="https://www.youtube.com/embed/pkYVOmU3MgA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><span><br>DSA in C++</span></div>
+        </div>
+        <hr><h5>Object Oriented Programming - OOPs</h5><hr>
+        <div class="row">
+            <div class="col-md-4"><iframe src="https://www.youtube.com/embed/bSrm9RXwBaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><span><br>OOPs in Java</span></div>
+            <div class="col-md-4"><iframe src="https://www.youtube.com/embed/qiSCMNBIP2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><span><br>OOPs in Python</span></div>
+            <div class="col-md-4"><iframe src="https://www.youtube.com/embed/i_5pvt7ag7E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><span><br>OOPs in C++</span></div>
+        </div>
+        <hr><h5>Computer science core subjects</h5><hr>
+        <div class="row">
+            <div class="col-md-4"><iframe src="https://www.youtube.com/embed/_TpOHMCODXo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><span><br>Operating System</span></div>
+            <div class="col-md-4"><iframe src="https://www.youtube.com/embed/videoseries?list=PLxCzCOWd7aiEed7SKZBnC6ypFDWYLRvB2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><span><br>Software Engineering</span></div>
+            <div class="col-md-4"><iframe src="https://www.youtube.com/embed/VwN91x5i25g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><span><br>Computer Networking</span></div>
+            <div class="col-md-4"><iframe src="https://www.youtube.com/embed/eYpXCdvKwEQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><span><br>DBMS</span></div>
+        </div>
+        
+        <!-- <hr><h5>Computer science core subjects</h5><hr>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+        </div> -->
+
+      </div>
+
+    </div>
+
+    <!-- Including Footer -->
+    {% include "footer.html" %}
+
+</body>
+
+</html>

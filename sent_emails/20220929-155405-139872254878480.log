@@ -1,0 +1,25 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: Password reset on 127.0.0.1:8000
+From: webmaster@localhost
+To: comrade@gmail.com
+Date: Thu, 29 Sep 2022 15:54:05 -0000
+Message-ID: <166446684575.9837.13297711611920739160@pop-os.localdomain>
+
+
+You're receiving this email because you requested a password reset for your user account at 127.0.0.1:8000.
+
+Please go to the following page and choose a new password:
+
+http://127.0.0.1:8000/reset/MjM/bcis65-010d8d55ec757ee832303e9ac712c193/
+
+Your username, in case you’ve forgotten: comrade
+
+Thanks for using our site!
+
+The 127.0.0.1:8000 team
+
+
+
+-------------------------------------------------------------------------------

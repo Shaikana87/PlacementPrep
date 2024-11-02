@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="{% static 'img/favicon.ico' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Placement Prep</title>
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.css" rel="stylesheet" />
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.js"></script>
+
+    <style>
+
+        .errorlist{
+            text-align: center;
+            max-width: 500px;
+            list-style: none;
+            color: red;
+            padding-left: -20px;
+            font-weight: 800;
+            word-wrap: break-word;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="justify-content-center">
+
+        <!-- Including Navbar -->
+        {% include "nav.html" %}
+
+        <div class="d-flex justify-content-center mt-5">
+
+            <div class="p-4 pb-4 justify-content-center" style="margin-top: 40px;">
+                <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <img src="{% static 'img\logo1.png' %}" height="40"
+                        alt="MDB Logo" loading="lazy" style="margin-top: -1px;" />
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                        {% csrf_token %}
+                        <form method="POST">
+                            <div class="text-center mb-3">
+                                <p>Sign up here:</p>
+                            </div>
+
+                            {% csrf_token %}
+
+                            {%for field, errors in form.errors.items%}
+                            <div class="info">
+                                <div id="error">{{errors | escape}}</div>
+                            </div>  
+                                
+                            {% endfor%}
+
+                            {% for field in form %}
+                                <div class="form-outline mb-4">
+                                    {{ field }}
+                                    <label class="form-label" for="{{ field.id }}">{{ field.label }}</label>
+                                </div>
+                            {% endfor %}
+
+                            <!-- Checkbox -->
+                            <div class="form-check d-flex justify-content-center mb-4">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked
+                                    aria-describedby="registerCheckHelpText" />
+                                <label class="form-check-label" for="registerCheck">
+                                    I have read and agree to the terms
+                                </label>
+                            </div>
+
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-primary btn-block mb-3">Sign up</button>
+
+                            <!-- {% for i in form.errors %}
+                                {{i.message}}
+                            {% endfor %} -->
+                        </form>
+                </div>
+                <!-- Pills content -->
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Including Footer -->
+    {% include "footer.html" %}
+
+</body>
+
+</html>
